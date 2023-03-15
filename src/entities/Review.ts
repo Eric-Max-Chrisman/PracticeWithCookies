@@ -20,3 +20,5 @@ export class Review {
   @ManyToOne(() => Book, (book) => book.reviews, { cascade: ['insert', 'update'] })
   book: Relation<Book>;
 }
+
+// post /api/books/:bookId/reviews
